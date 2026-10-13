@@ -10,9 +10,9 @@ def guess_number():
         if guess == number:
             print("You got it :D")
             correct = True
-        elif maximum > guess > number:
+        elif maximum >= guess >= number:
             print("sorry but the number is lower")
-        elif minimum < guess < number:
+        elif minimum <= guess <= number:
             print("sorry but the number is higher")
         else:
             print("not in curent range")
