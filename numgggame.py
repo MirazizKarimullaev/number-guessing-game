@@ -1,6 +1,5 @@
 import random
 import time
-import math
 def guess_number():
     minimum = int(input("what is the min of the number you want to guess? "))
     maximum = int(input("what is the max? "))
@@ -18,7 +17,7 @@ def guess_number():
             print("You got it :D")
             if guesses > 1:
                 print(f"You made {guesses} guesses in the order {guess_list}")
-            elif guesses == 1 and rrange > 10:
+            elif guesses == 1 and rrange > 24:
                 print(f"Dang, one guess? that's crazy lucky you guessed {guess}")
             correct = True
         elif maximum >= guess >= number:
