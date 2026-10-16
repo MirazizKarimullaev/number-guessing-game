@@ -16,8 +16,10 @@ def guess_number():
         if guess == number:
             print("You got it :D")
             if guesses > 1:
+                time.sleep(.5)
                 print(f"You made {guesses} guesses in the order {guess_list}")
             elif guesses == 1 and rrange > 24:
+                time.sleep(.5)
                 print(f"Dang, one guess? that's crazy lucky you guessed {guess}")
             correct = True
         elif maximum >= guess >= number:
